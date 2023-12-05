@@ -41,7 +41,7 @@ def pedeDados():
         escreveDados(nome, idade, sexo, telefone)
         #busca sexo
         while True:
-            resposta = input("Deseja pesquisar por sexo? (S/N)")
+            resposta = input("Deseja pesquisar por sexo(S/N)? ")
             if resposta == "S":
                 while True:
                     sexoPesquisado = input("Deseja pesquisar M(masculino), F(feminino) ou O(outro)? ")
