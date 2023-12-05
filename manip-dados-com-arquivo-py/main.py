@@ -88,6 +88,23 @@ def busca_usuario_pelo_sexo(sexo):
             print(f"Telefone: {j[3]}")
 
 
+def busca_usuario_pelo_nome(nome):
+    with open("dados.txt", "r", encoding="utf-8") as arquivo:
+        nomes = []
+        nomesSelecionados = []
+        for linha in arquivo.readlines():
+            listaCont = linha.split("|")
+            nomes.append(listaCont)
+        for i in nomes:
+            if nome in i[0]:
+                nomesSelecionados.append(i)
+        for j in nomesSelecionados:
+            print(f"Nome: {j[0]}")
+            print(f"Idade: {j[1]} anos")
+            print(f"Sexo: {j[2]}")
+            print(f"Telefone: {j[3]}")
+
+
 def main():
     pedeDados()
     imprimeDados()
