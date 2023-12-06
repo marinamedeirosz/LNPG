@@ -53,6 +53,16 @@ def pedeDados():
                 break
             else:
                 print("Resposta inválida")
+        #busca nome
+        while True:
+            resposta = input("Deseja pesquisar por nome/caractere(S/N)? ")
+            if resposta == "S":
+                nomePesquisado = input("Qual nome deseja pesquisar? ")
+                busca_usuario_pelo_nome(nomePesquisado)
+            elif resposta == "N":
+                break
+            else:
+                print("Resposta inválida")
 
 
 def imprimeDados():
@@ -103,6 +113,8 @@ def busca_usuario_pelo_nome(nome):
             print(f"Idade: {j[1]} anos")
             print(f"Sexo: {j[2]}")
             print(f"Telefone: {j[3]}")
+        if len(nomesSelecionados) == 0:
+            print("Nenhum nome encontrado")
 
 
 def main():
