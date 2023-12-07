@@ -1,0 +1,21 @@
+from tkinter import *
+
+win = Tk()
+win.title("Cadastro de musica")
+win.geometry('600x500')
+
+lblNome = Label(win, text='Nome do album:')
+txtfld = Entry(win, text='Nome do album', bd=5)
+txtfld.place(x=80, y=50)
+lblAno = Label(win, text='Ano do album:')
+txtfld = Entry(win, text='Ano do album', bd=5)
+txtfld.place(x=80, y=50)
+lblBanda = Label(win, text='Banda do album:')
+txtfld = Entry(win, text='Banda do album', bd=5)
+txtfld.place(x=80, y=50)
+v0 = IntVar()
+v0.set(1)
+r1 = Radiobutton(win, text='sim', variable = v0, value = 1)
+r2  = Radiobutton(win, text='nao', variable = v0, value = 2)
+r1.place(x=100, y=300)
+r2.place(x=300, y=300)
