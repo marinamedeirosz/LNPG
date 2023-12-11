@@ -49,6 +49,7 @@ def pedeDados():
                         print("Sexo inválido")
                     else:
                         busca_usuario_pelo_sexo(sexoPesquisado)
+                        break
             elif resposta == "N":
                 break
             else:
