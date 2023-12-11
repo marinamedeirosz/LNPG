@@ -28,7 +28,7 @@ def buscaAlbumPorArtista(txtfld, tree):
     for item in tree.get_children():
         tree.delete(item)
 
-    #filtra albuns
+    #filtra albuns por artista
     for album in albuns:
         print(album)
         if artista in album[2].lower():
@@ -47,7 +47,7 @@ def buscaAlbumPorAno(spbx,radio,tree):
     for item in tree.get_children():
         tree.delete(item)
     
-    #filtra albuns
+    #filtra albuns por epoca
     if epoca == 'Anterior':
         for album in albuns:
             if album[1] < ano:

@@ -103,7 +103,6 @@ def janelaBuscaAno():
     #radio ano
     ano = StringVar()
     ano.set("Anterior")
-    
     rdoAnterior=Radiobutton(winBuscaAno,text='Anterior a', variable=ano, value='Anterior')
     rdoAnterior.grid(row=1, column=0, padx=5, pady=5)
     rdoIgual=Radiobutton(winBuscaAno,text='Igual a ', variable=ano, value='Igual')
