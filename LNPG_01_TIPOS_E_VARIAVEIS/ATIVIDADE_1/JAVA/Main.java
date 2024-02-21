@@ -1,9 +1,11 @@
+package ATIVIDADE_1.JAVA;
+
 import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        Calculadora calc = new Calculadora();
+        Calculator calc = new Calculator();
 
         System.out.print("Digite o primeiro numero: ");
         double n1 = scan.nextDouble();
