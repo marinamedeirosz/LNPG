@@ -5,26 +5,20 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        
-        System.out.print("Digite a 1° nota: ");
-        double n1 = scan.nextDouble();
-        System.out.print("Digite o peso da 1° nota: ");
-        double p1 = scan.nextDouble();
+        Average av = new Average();
+        double value;
+        double weight;
 
-        System.out.print("Digite a 2° nota: ");
-        double n2 = scan.nextDouble();
-        System.out.print("Digite o peso da 2° nota: ");
-        double p2 = scan.nextDouble();
-
-        System.out.print("Digite a 3° nota: ");
-        double n3 = scan.nextDouble();
-        System.out.print("Digite o peso da 3° nota: ");
-        double p3 = scan.nextDouble();
-
-        double media = (n1 * p1 + n2 * p2 + n3 * p3) / (p1 + p2 + p3);
-
-        System.out.print("A média ponderada das notas é: ");
-        System.out.println(media);
+        for (int i = 1; i < 4; i++) {
+            System.out.printf("Digite a %d° nota: ", i);
+            value = scan.nextDouble();
+            System.out.printf("Digite o peso da %d° nota: ", i);
+            weight = scan.nextDouble();
+            av.scoreWithWeight(value, weight);
+        }
+        double sum = av.getSumWithWeight();
+        double weights = av.getSumWeights();
+        System.out.printf("A média ponderada das notas é: %.2f", av.finalScore(sum, weights));
 
         scan.close();
     }

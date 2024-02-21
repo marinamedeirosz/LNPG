@@ -5,16 +5,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        
+        Adulthood checker = new Adulthood();
+
         System.out.print("Digite sua idade: ");
-        int idade = scan.nextInt();
-        
-        if (idade >= 18) {
-            System.out.println("Você é maior de idade!");
-        }
-        else {
-            System.out.println("Você é menor de idade!");
-        }
+        int age = scan.nextInt();
+        checker.checkAge(age);
 
         scan.close();
     }
