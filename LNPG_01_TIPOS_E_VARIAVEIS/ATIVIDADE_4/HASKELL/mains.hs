@@ -1,5 +1,4 @@
-module Main where
-
+main::IO()
 main = do 
   putStrLn "Digite sua idade: "
   input <- getLine

@@ -1,6 +1,3 @@
-module Main where
-
-
 soma :: Float -> Float -> Float
 soma x y = x + y
 sub :: Float -> Float -> Float
@@ -10,6 +7,7 @@ mult x y = x * y
 divi :: Float -> Float -> Float
 divi x y = x / y
 
+main::IO()
 main = do 
   putStrLn "Digite o primeiro numero: "
   input1 <- getLine

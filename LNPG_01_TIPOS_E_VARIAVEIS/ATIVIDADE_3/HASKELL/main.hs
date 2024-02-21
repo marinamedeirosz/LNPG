@@ -1,9 +1,7 @@
-module Main where
-
-
 cToF :: Float -> Float
 cToF c = c * 1.8 + 32
 
+main::IO()
 main = do 
   putStrLn "Digite a temperatura em celsius: "
   input <- getLine

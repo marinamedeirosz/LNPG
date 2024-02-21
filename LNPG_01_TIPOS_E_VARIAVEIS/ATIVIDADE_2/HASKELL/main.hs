@@ -1,9 +1,7 @@
-module Main where
-
-
 parOuImpar :: Integer -> Bool
 parOuImpar = even
 
+main::IO()
 main = do 
   putStrLn "Digite um numero: "
   input1 <- getLine

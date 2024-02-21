@@ -1,6 +1,4 @@
-module Main where
-
-
+main::IO()
 main = do 
     putStrLn "Digite a nota 1: "
     input1 <- getLine
