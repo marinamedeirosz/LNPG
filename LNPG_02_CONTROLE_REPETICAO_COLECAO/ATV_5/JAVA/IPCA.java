@@ -31,10 +31,10 @@ public class IPCA {
 
     protected double ipcaAverage(List<List<String>> ipca) {
         double sum = 0;
-        double average = sum / (ipca.size());
         for (List<String> item : ipca) {
             sum += Double.parseDouble(item.get(1));
         }
+        double average = sum / (ipca.size());
         return average;
     }
 }

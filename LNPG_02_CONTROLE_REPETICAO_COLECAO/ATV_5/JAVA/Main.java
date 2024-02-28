@@ -14,9 +14,9 @@ public class Main {
         List<String> lowestIpca = orderedIpca.get(orderedIpca.size() - 1);
         List<String> highestIpca = orderedIpca.get(0);
 
-        System.out.printf("Menor valor do IPCA: %s  Mês/ano: (%s)", lowestIpca.get(1), lowestIpca.get(0));
-        System.out.printf("Maior valor do IPCA: %s  Mês/ano: (%s)", highestIpca.get(1), highestIpca.get(0));
-        System.out.printf("Média de todos os valores do IPCA: %.2f", ipcaAvg);
+        System.out.printf("Menor valor do IPCA: %s  Mês/ano: (%s)\n", lowestIpca.get(1), lowestIpca.get(0));
+        System.out.printf("Maior valor do IPCA: %s  Mês/ano: (%s)\n", highestIpca.get(1), highestIpca.get(0));
+        System.out.printf("Média de todos os valores do IPCA: %.2f\n", ipcaAvg);
 
         scan.close();
     }
