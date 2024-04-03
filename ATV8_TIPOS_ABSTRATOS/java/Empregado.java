@@ -1,6 +1,5 @@
 package ATV8_TIPOS_ABSTRATOS.java;
 
-
 public class Empregado {
     private String nome;
     private long id;
@@ -20,8 +19,8 @@ public class Empregado {
         this.departamento = dep;
     }
 
-    public Departamento getDepartamento() {
-        return this.departamento;
+    public String getDepInfo() {
+        return this.departamento.depToString();
     }
 
     public void setNome(String name) {
@@ -34,5 +33,15 @@ public class Empregado {
 
     public void setSalario(double salary) {
         this.salario = salary;
+    }
+
+    public void changePersonalInfo(String name, String cg, double salary) {
+        setNome(name);
+        setCargo(cg);
+        setSalario(salary);
+    }
+
+    public String empToString() {
+        return "Nome: " + this.nome + "\nID: " + this.id + "\nCargo: " + this.cargo + "\nSalario: " + this.salario;
     }
 }

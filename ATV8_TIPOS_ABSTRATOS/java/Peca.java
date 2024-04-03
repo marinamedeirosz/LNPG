@@ -1,6 +1,5 @@
 package ATV8_TIPOS_ABSTRATOS.java;
 
-
 public class Peca {
     private String tipo;
     private String cor;
@@ -46,7 +45,8 @@ public class Peca {
         }
     }
 
-    public Peca getPeca() {
-        return this;
+    @Override
+    public String toString() {
+        return "Tipo: " + this.tipo + "\nCor: " + this.cor + "\nPosicao: " + this.posicao[0] + "x" + this.posicao[1];
     }
 }

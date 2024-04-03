@@ -1,10 +1,10 @@
 newtype Livro = Livro (String, String, Int, Int)
 
 inicializar :: String -> String -> Int -> Int -> Livro
-inicializar titulo autor ano copias = Livro (titulo autor ano copias)
+inicializar titulo autor ano copias = Livro (titulo, autor, ano, copias)
 
 emprestaCopia :: Livro -> Livro
-emprestaCopia (Livro titulo autor ano copias) = Livro (titulo autor ano (copias - 1))
+emprestaCopia (Livro (titulo autor ano copias)) = Livro (titulo autor ano (copias - 1))
 
 devolveCopia :: Livro -> Livro
 devolveCopia (Livro (titulo autor ano copias)) = (Livro titulo autor ano (copias + 1))

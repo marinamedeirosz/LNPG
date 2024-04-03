@@ -1,6 +1,5 @@
 package ATV8_TIPOS_ABSTRATOS.java;
 
-
 import java.util.ArrayList;
 
 public class Departamento {
@@ -15,13 +14,31 @@ public class Departamento {
         this.id = id;
         this.localizacao = localizacao;
     }
+
     public void addEmpregado(Empregado empregado) {
         this.empregados.add(empregado);
     }
+
     public void removeEmpregado(Empregado empregado) {
         this.empregados.remove(empregado);
     }
-    public ArrayList<Empregado> getEmpregados() {
-        return this.empregados;
+
+    public String depToString() {
+        return "Nome: " + this.nome + "\nID: " + this.id + "\nLocalizacao: " + this.localizacao;
+    }
+
+    public void getEmpInfo() {
+        if (this.empregados.size() != 0) {
+            for (int i = 0; i < this.empregados.size(); i++) {
+                this.empregados.get(i).empToString();
+                /*
+                 * this.empregados.forEach((empregado) -> {
+                 * System.out.println(empregado.empToString());
+                 * });
+                 */
+            }
+        } else {
+            System.out.println("Nao ha empregados no departamento");
+        }
     }
 }

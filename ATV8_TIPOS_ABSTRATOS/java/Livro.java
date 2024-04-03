@@ -1,6 +1,5 @@
 package ATV8_TIPOS_ABSTRATOS.java;
 
-
 public class Livro {
     private String titulo;
     private String autor;
@@ -26,7 +25,8 @@ public class Livro {
         return this.copias;
     }
 
-    public Livro getLivro() {
-        return this;
+    @Override
+    public String toString() {
+        return "Título: " + this.titulo + "\nAutor: " + this.autor + "\nAno: " + this.ano;
     }
 }
