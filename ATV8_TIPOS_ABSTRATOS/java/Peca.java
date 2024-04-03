@@ -1,5 +1,6 @@
 package ATV8_TIPOS_ABSTRATOS.java;
 
+
 public class Peca {
     private String tipo;
     private String cor;

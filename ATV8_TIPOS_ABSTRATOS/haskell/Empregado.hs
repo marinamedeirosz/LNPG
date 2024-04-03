@@ -34,3 +34,4 @@ removeEmpregado empregado (Departamento nome id localizacao empregados) = Depart
 
 getEmpregados :: Departamento -> [Empregado]
 getEmpregados (Departamento _ _ _ empregados) = empregados
+

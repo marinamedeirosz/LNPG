@@ -1,5 +1,6 @@
 package ATV8_TIPOS_ABSTRATOS.java;
 
+
 import java.util.ArrayList;
 
 public class Departamento {

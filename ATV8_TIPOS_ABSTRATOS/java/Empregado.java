@@ -1,5 +1,6 @@
 package ATV8_TIPOS_ABSTRATOS.java;
 
+
 public class Empregado {
     private String nome;
     private long id;
